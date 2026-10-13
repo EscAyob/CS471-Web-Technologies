@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}My Library{% endblock %}</title>
+    <meta name="keywords" content="Books, recent, Learning, library">
+    <meta name="description" content="Books website">
+    <meta name="author" content="author name">
+    <link rel="icon" href="{% static 'qu-icon.png' %}">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    {% include 'includes/header.html' %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% include 'includes/footer.html' %}
+</body>
+</html>
